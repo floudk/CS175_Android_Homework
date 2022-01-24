@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/Progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_below="@id/videoView"
+        />
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/Progressbar"
+        android:text="00:00/00:00"
+        android:layout_alignRight="@id/Progressbar"/>
+
+    <Button
+        android:layout_marginTop="200dp"
+        android:id="@+id/buttonPlay"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:text="Play" />
+
+    <Button
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/buttonPlay"
+        android:id="@+id/buttonPause"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Pause" />
+    <Button
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/buttonPause"
+        android:id="@+id/buttonReload"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="Reload" />
+</RelativeLayout>
